@@ -1,0 +1,91 @@
+/* variables */
+:root{
+    --primary-color: #445569;
+    --bg-color: #F1F4FA;
+}
+
+/* general */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg-color);
+}
+
+/* login section */
+.parent_login{
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60dvh;
+    width: 80dvh;
+    border-radius: 10px;
+    background-color: var(--primary-color);
+}
+
+#bit-logo{
+    width: 130px;
+    margin-bottom:1vh;
+
+}
+#erp-logo{
+    width: 140px;
+    height: 4.5dvh;
+    position: relative;
+    bottom:1dvh;
+
+}
+.logo{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+#btm-logo{
+    width: 70%;
+    height: 1px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--bg-color);
+    margin-top: 2dvh;
+    margin-bottom: 8dvh;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 70.2%;
+}
+input{
+    margin-bottom:3dvh;
+    width: 100%;
+    height: 4.5dvh;
+    border: none;
+    text-align: center;
+    border-radius: 10px;
+    font-family: "Outfit", sans-serif;
+    font-size: 20px;
+    font-weight:normal;
+}
+input[type="submit"]{
+    background-color: var(--primary-color);
+    color: #fff;
+    border: 1px solid #fff;
+    cursor: pointer;
+    box-shadow: 0px 1px 1px 0px #000;
+}
+#user_id,#password{
+    color: var(--primary-color);
+}
+#gparent{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

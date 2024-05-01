@@ -1,0 +1,84 @@
+@import url('../lib.css');
+
+.main-container{
+    background-color: #fff;
+    width: 100%;
+    height: 70vh;
+    border-radius: 10px;
+    border: 1px solid #000;
+    position: relative;
+    z-index: 0;
+}
+.submitted{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.submitted span{
+    color:var(--primary-color);
+}
+
+.event-details{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.ed-left,.ed-right{
+    width: 40%;
+}
+.ed-text {
+    display: flex;
+    margin-bottom: 1vh;
+    justify-content:space-between;
+    align-items: center;
+}
+.ed-text input{
+    background-color: transparent;
+    width: 45%;
+    height: 3dvh;
+    padding: 0.5em;
+    border: 2px solid #44556983;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+.ed-text label{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    position: relative;
+    bottom: 5px;
+}
+.ed-text input:focus {
+    outline: none;
+}
+
+.event-details-container{
+    margin-top: 2vh;
+}
+
+.sub-sub{
+    position: relative;
+    left: 10px;
+}
+.guest-individual{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+}
+
+.aprov-reject{
+    display: flex;
+    margin-inline: auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    position: absolute;
+    bottom: 20px;
+    left: 3vw;
+}
