@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day-wise</title>
+    <link rel="stylesheet" href="./css/lib.css" />
+    <link rel="stylesheet" href="./css/admin/admin-daywise.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/multi-select.css" />
+  </head>
+  <body>
+    <!-- side bar -->
+    <div class="sidebar">
+      <div class="top">
+        <div class="side-link">
+          <img src="./asserts/Logo.png" alt="" id="logo" />
+          <hr />
+          <a href="./admin-home.html" class="un-active">Event Approval</a>
+          <a href="./event-requisition.html" class="un-active">Event Requisition</a>
+          <a href="#" class="active">Day-wise Report</a>
+        </div>
+      </div>
+      <div class="bottom">
+        <a href="./Login.html" class="un-active">
+          <img
+            src="./asserts/logout_blend.png"
+            id="logout-logo"
+            alt=""
+          />Logout</a
+        >
+      </div>
+    </div>
+    <!-- / sidebar -->
+
+    <div class="right">
+      <div class="right-container">
+        <!-- navbar -->
+        <div class="navbar">
+          <h2 class="nav-title">Day Wise Report</h2>
+          <div class="profile-logo">
+            <p>Admin</p>
+            <img src="./asserts/user_blend.png" alt="" id="user-logo" />
+          </div>
+        </div>
+        <!-- / navbar -->
+
+        <!-- subtitle -->
+        <div class="subtitle" style="margin-top: 10vh">
+          <h3>Day-Wise Entry Details</h3>
+          <div class="st-btm"></div>
+        </div>
+        <!-- / subtitle -->
+        <!-- subtitle -->
+        <div class="subtitle df" style="margin-top: 3vh">
+          <h3>Select the Date:</h3>
+          <input type="date" id="date-time" />
+        </div>
+        <button class="download-btn btn" style="position: absolute;right: 4vw;top: 26vh;">
+          Download <img src="./asserts/Download Icon.png" alt="" />
+        </button>
+        <!-- / subtitle -->
+
+        <!-- table -->
+        <div class="table-container">
+          <table class="table">
+            <tr>
+              <th>ID</th>
+              <th>Oraganizer</th>
+              <th>Event Name</th>
+              <th>From</th>
+              <th>To</th>
+              <th>Timings</th>
+              <th>Venue</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Mr.XXX</td>
+              <td>BIT-Pongal</td>
+              <td>2/4/2024</td>
+              <td>5/4/2024</td>
+              <td>00 : 00 - 00 : 00</td>
+              <td>WW202, EW203, WW205</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Mr.YYY</td>
+              <td>BIT-Christmas</td>
+              <td>2/4/2024</td>
+              <td>5/4/2024</td>
+              <td>00 : 00 - 00 : 00</td>
+              <td>WW202, EW203, WW205</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Mr.ZZZ</td>
+              <td>BIT-Independence Day</td>
+              <td>2/4/2024</td>
+              <td>5/4/2024</td>
+              <td>00 : 00 - 00 : 00</td>
+              <td>WW202, EW203, WW205</td>
+            </tr>
+          </table>
+        </div>
+        <!-- / table -->
+      </div>
+    </div>
+  </body>
+  <script src="./js/multi-select.js"></script>
+  <script>
+    new MultiSelectTag("multi-drop", {
+      rounded: true, // default true
+      shadow: false, // default false
+    });
+  </script>
+</html>

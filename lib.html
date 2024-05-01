@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/lib.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/multi-select.css" />
+  </head>
+  <body>
+    <!-- side bar -->
+    <div class="sidebar">
+      <div class="top">
+        <div class="side-link">
+          <img src="./asserts/Logo.png" alt="" id="logo" />
+          <hr />
+          <a href="#" class="un-active">link 1</a>
+          <a href="#" class="un-active">link 2</a>
+          <a href="#" class="active">link 3</a>
+        </div>
+      </div>
+      <div class="bottom">
+        <a href="#" class="un-active">
+          <img
+            src="./asserts/logout_blend.png"
+            id="logout-logo"
+            alt=""
+          />Logout</a
+        >
+      </div>
+    </div>
+    <!-- / sidebar -->
+
+    <div class="right">
+      <div class="right-container">
+        <!-- navbar -->
+        <div class="navbar">
+          <h2 class="nav-title">Nav Title</h2>
+          <div class="profile-logo">
+            <p>Admin</p>
+            <img src="./asserts/user_blend.png" alt="" id="user-logo" />
+          </div>
+        </div>
+        <!-- / navbar -->
+
+        <!-- subtitle -->
+        <div class="subtitle">
+          <h3>(Sub-Tile) Buttons</h3>
+          <div class="st-btm"></div>
+        </div>
+        <!-- / subtitle -->
+
+        <!-- buttons -->
+        <div class="btn-container">
+          <button class="download-btn btn">
+            Download <img src="./asserts/Download Icon.png" alt="" />
+          </button>
+          <button class="approve-btn btn">
+            Approve <img src="./asserts/tick.png" alt="" />
+          </button>
+          <button class="reject-btn btn">
+            Reject <img src="./asserts/cross.png" alt="" />
+          </button>
+          <button class="new-btn btn">
+            New <img src="./asserts/plus_mask.png" alt="" />
+          </button>
+          <button class="next-btn btn">
+            Next <img src="./asserts/Arrow.png" alt="" />
+          </button>
+          <button class="submit-btn btn">
+            Submit <img src="./asserts/submit-icon.png" alt="" />
+          </button>
+        </div>
+        <!--/  buttons -->
+
+        <!-- subtitle -->
+        <div class="subtitle" style="margin-top: 2vh">
+          <h3>LABELS</h3>
+          <div class="st-btm"></div>
+        </div>
+        <!-- / subtitle -->
+
+        <!-- Labels -->
+        <div class="label-container">
+          <div class="label green">Initiated</div>
+          <div class="label purple">Approved</div>
+          <div class="label red">Disapproved</div>
+        </div>
+        <!-- / Labels -->
+
+        <!-- subtitle -->
+        <div class="subtitle" style="margin-top: 2vh">
+          <h3>TABLE</h3>
+          <div class="st-btm"></div>
+        </div>
+        <!-- / subtitle -->
+        <!-- table -->
+        <table class="table">
+          <tr>
+            <th>col 1</th>
+            <th>col 1 asdf</th>
+            <th>col 1</th>
+            <th>col 1</th>
+            <th>col 1</th>
+          </tr>
+          <tr>
+            <td>row 1 data 1</td>
+            <td>row 1 data 2</td>
+            <td>row 1 data 3</td>
+            <td>row 1 data 4</td>
+            <td>row 1 data 5</td>
+          </tr>
+          <tr>
+            <td>row 2 data 1</td>
+            <td>row 2 data 2</td>
+            <td>row 2 data 3</td>
+            <td>row 2 data 4</td>
+            <td>row 2 data 5</td>
+          </tr>
+          <tr>
+            <td>row 3 data 1</td>
+            <td>row 3 data 2</td>
+            <td>row 3 data 3</td>
+            <td>row 3 data 4</td>
+            <td>row 3 data 5</td>
+          </tr>
+          <tr>
+            <td>row 4 data 1</td>
+            <td>row 4 data 2</td>
+            <td>row 4 data 3</td>
+            <td>row 4 data 4</td>
+            <td>row 4 data 5</td>
+          </tr>
+          <tr>
+            <td>row 5 data 1</td>
+            <td>row 5 data 2</td>
+            <td>row 5 data 3</td>
+            <td>row 5 data 4</td>
+            <td>row 5 data 5</td>
+          </tr>
+        </table>
+        <!-- / table -->
+
+        <!-- subtitle -->
+        <div class="subtitle" style="margin-top: 2vh">
+          <h3>Form Elements</h3>
+          <div class="st-btm"></div>
+        </div>
+        <!-- / subtitle -->
+
+        <!-- form elements -->
+        <div class="form-container">
+          <div class="form-group">
+            <!-- text -->
+            <div class="in-text">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" />
+            </div>
+
+            <!-- radio -->
+            <div class="df">
+              <div class="in-radio">
+                <input type="radio" name="name" id="yes" />
+                <label for="yes">Yes</label>
+              </div>
+              <div class="in-radio">
+                <input type="radio" name="name" id="no" />
+                <label for="no">No</label>
+              </div>
+            </div>
+            <!-- / radio -->
+
+            <!-- checkbox -->
+            <div class="df">
+              <div class="in-checkbox">
+                <input type="checkbox" name="one" id="one" />
+                <label for="one">one</label>
+              </div>
+              <div class="in-checkbox">
+                <input type="checkbox" name="two" id="two" />
+                <label for="two">Two</label>
+              </div>
+            </div>
+
+            <!-- drop down -->
+            <div class="in-drop">
+              <label for="drop">Drop Down</label>
+              <select name="multi-drop" id="multi-drop">
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+            </div>
+
+            <!-- num input -->
+            <div class="in-num">
+              <label for="num">Number</label>
+              <input type="number" name="num" id="num" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/multi-select.js"></script>
+  <script>
+    new MultiSelectTag("multi-drop", {
+      rounded: true, // default true
+      shadow: false, // default false
+    });
+  </script>
+</html>

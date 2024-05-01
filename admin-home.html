@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/lib.css" />
+    <link rel="stylesheet" href="./css/admin/admin-home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/multi-select.css" />
+  </head>
+  <body>
+    <!-- side bar -->
+    <div class="sidebar">
+      <div class="top">
+        <div class="side-link">
+          <img src="./asserts/Logo.png" alt="" id="logo" />
+          <hr />
+          <a href="#" class="active">Event Approval</a>
+          <a href="./event-requisition.html" class="un-active">Event Requisition</a>
+          <a href="./admin-daywise.html" class="un-active">Day-wise Report</a>
+        </div>
+      </div>
+      <div class="bottom">
+        <a href="./Login.html" class="un-active">
+          <img
+            src="./asserts/logout_blend.png"
+            id="logout-logo"
+            alt=""
+          />Logout</a
+        >
+      </div>
+    </div>
+    <!-- / sidebar -->
+
+    <div class="right">
+      <div class="right-container">
+        <!-- navbar -->
+        <div class="navbar">
+          <h2 class="nav-title">Event Approval</h2>
+          <div class="profile-logo">
+            <p>Admin</p>
+            <img src="./asserts/user_blend.png" alt="" id="user-logo" />
+          </div>
+        </div>
+        <!-- / navbar -->
+
+        <!-- subtitle -->
+        <div class="subtitle" style="margin-top: 10vh">
+          <h3>Event Entry Details</h3>
+          <div class="st-btm"></div>
+        </div>
+        <!-- / subtitle -->
+
+        <!-- table -->
+        <div class="table-container">
+          <table class="table">
+            <tr>
+              <th>ID</th>
+              <th>Event Name</th>
+              <th>Dates</th>
+              <th>Faculty Name - ID</th>
+              <th>View Details</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>BIT-Pongal</td>
+              <td>2/4/2024 - 5/4/2024</td>
+              <td>Mr.XXX</td>
+              <td>
+                <a href="./admin-view.html"><img src="./asserts/eye_mask.png" alt="" /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>BIT-Christmas</td>
+              <td>25/12/2024 - 26/12/2024</td>
+              <td>Mr.YYY</td>
+              <td>
+                <a href="./admin-view.html"><img src="./asserts/eye_mask.png" alt="" /></a>
+              </td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>BIT-Independence Day</td>
+              <td>15/8/2024 - 15/8/2024</td>
+              <td>Mr.ZZZ</td>
+              <td>
+                <a href="./admin-view.html"><img src="./asserts/eye_mask.png" alt="" /></a>
+              </td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>BIT-New Year</td>
+                <td>1/1/2025 - 1/1/2025</td>
+                <td>Mr.AAA</td>
+                <td>
+                    <a href="./admin-view.html"><img src="./asserts/eye_mask.png" alt="" /></a>
+                </td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>BIT-Diwali</td>
+                <td>4/11/2025 - 5/11/2025</td>
+                <td>Mr.BBB</td>
+                <td>
+                    <a href="./admin-view.html"><img src="./asserts/eye_mask.png" alt="" /></a>
+                </td>
+            </tr>
+            
+
+          </table>
+        </div>
+        <!-- / table -->
+      </div>
+    </div>
+  </body>
+  <script src="./js/multi-select.js"></script>
+  <script>
+    new MultiSelectTag("multi-drop", {
+      rounded: true, // default true
+      shadow: false, // default false
+    });
+  </script>
+</html>

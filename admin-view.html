@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/lib.css" />
+    <link rel="stylesheet" href="./css/admin/admin-view.css" />
+    <link rel="stylesheet" href="./css/multi-select.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oxanium:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- side bar -->
+    <div class="sidebar">
+      <div class="top">
+        <div class="side-link">
+          <img src="./asserts/Logo.png" alt="" id="logo" />
+          <hr />
+          <a href="./admin-home.html" class="un-active">Event Approval</a>
+          <a href="./event-requisition.html" class="un-active">Event Requisition</a>
+          <a href="./admin-daywise.html" class="un-active">Day-wise Report</a>
+        </div>
+      </div>
+      <div class="bottom">
+        <a href="./Login.html" class="un-active">
+          <img src="./asserts/logout_blend.png" id="logout-logo" alt="" />Logout
+        </a>
+      </div>
+    </div>
+    <!-- / sidebar -->
+
+    <div class="right">
+      <div class="right-container">
+        <!-- navbar -->
+        <div class="navbar">
+          <h2 class="nav-title">Event Approval</h2>
+          <div class="profile-logo">
+            <p>Admin</p>
+            <img src="./asserts/user_blend.png" alt="" id="user-logo" />
+          </div>
+        </div>
+        <!-- / navbar -->
+
+        <!-- subtitle -->
+        <div class="subtitle" style="margin-top: 5vh">
+          <h3>Event Entry Details - View</h3>
+          <div class="st-btm"></div>
+        </div>
+        <!-- / subtitle -->
+        <div class="main-container">
+          <div class="submitted">Submitted On : <span>00/00/0000</span></div>
+          <div class="event-details-container">
+            <div class="subtitle sub-sub">
+              <h3>Event Details - (Name)</h3>
+              <div class="st-btm"></div>
+            </div>
+            <div class="event-details">
+              <div class="ed-left">
+                <div class="ed-text">
+                  <label for="eid">Event ID</label>
+                  <input type="number" value="100" name="eid" id="eid" />
+                </div>
+                <div class="ed-text">
+                  <label for="name">Event Name</label>
+                  <input type="text" value="BIT-Pongal" name="name" id="name" />
+                </div>
+                <div class="ed-text">
+                  <label for="etype">Event Type</label>
+                  <input type="text" value="Club" name="etype" id="etype" />
+                </div>
+                <div class="ed-text">
+                  <label for="nogu">No of Guest</label>
+                  <input type="number" value="10" name="nogu" id="nogu" />
+                </div>
+              </div>
+              <div class="ed-right">
+                <div class="ed-text">
+                  <label for="event-dates">Event Dates</label>
+                  <input type="date" name="event-dates" id="event-dates" />
+                </div>
+                <div class="ed-text">
+                  <label for="event-time">Event Time</label>
+                  <input type="time" name="event-time" id="event-time" />
+                </div>
+                <div class="ed-text">
+                  <label for="internal-participants"
+                    >Internal Participants</label
+                  >
+                  <input
+                    type="number"
+                    value="100"
+                    name="internal-participants"
+                    id="internal-participants"
+                  />
+                </div>
+                <div class="ed-text">
+                  <label for="external-participants"
+                    >External Participants</label
+                  >
+                  <input
+                    type="number"
+                    value="10"
+                    name="external-participants"
+                    id="external-participants"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="guest-details-container">
+            <div class="subtitle sub-sub">
+              <h3>Guest Details</h3>
+              <div class="st-btm"></div>
+            </div>
+            <div class="guest-details">
+              <div
+                class="subtitle sub-sub"
+                style="position: relative; left: 50px"
+              >
+                <h3>Guest 1</h3>
+                <div class="st-btm"></div>
+              </div>
+              <div class="guest-individual">
+                <div class="in-text" style="width: 70%">
+                  <label for="guest1n" style="position: relative; bottom: 5px"
+                    >Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+                  >
+                  <input
+                    type="text"
+                    name="guest1n"
+                    id="guest1n"
+                    style="width: 80%"
+                  />
+                </div>
+                <div class="in-text" style="width: 80%">
+                  <label for="guest1d" style="position: relative; bottom: 5px"
+                    >Designation</label
+                  >
+                  <input
+                    type="text"
+                    name="guest1d"
+                    id="guest1d"
+                    style="width: 70%"
+                  />
+                </div>
+                <div class="in-text" style="width: 80%">
+                  <label for="guest1o" style="position: relative; bottom: 5px"
+                    >Organization</label
+                  >
+                  <input
+                    type="text"
+                    name="guest1o"
+                    id="guest1o"
+                    style="width: 70%"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="aprov-reject">
+            <a href="./admin-home.html">
+              <button class="approve-btn btn">
+                Approve <img src="./asserts/tick.png" alt="" />
+              </button>
+            </a>
+            <a href="./admin-home.html">
+              <button class="reject-btn btn">
+                Reject <img src="./asserts/cross.png" alt="" />
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/multi-select.js"></script>
+  </body>
+</html>
